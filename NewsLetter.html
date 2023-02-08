@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Subscribe Here!</title>
+	<script type="text/javascript">
+		function Validate(){
+			var name = document.regform.name;
+			var mail = document.regform.email; 
+			if(mail.value.length<=0)
+			{
+				alert("Enter an email!");
+				mail.focus();
+				return false;
+			}
+			if(name.value.length<=0){
+				alert("Enter your Name!");
+				name.focus();
+				return false;
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body id="body">
+	<h1>Subscribe Here :)</h1>
+	<p>"A newsletter is a tool used to communicate regularly with your subscribers, delivering the information you want in your email boxes, these messages can contain simple text or a structure composed of images and formatted text."</p>
+	<center>
+		<form name="regform" method="post" action="storemail.php" onsubmit="return Validate()">
+			<input type="text" name="name" placeholder="name" id="name"><br>
+			<input type="email" name="email" placeholder="someone@example.com" id="mail"><br>
+			<input type="submit" value="SUBSCRIBE">
+			<input type="reset" value="RESET">
+		</form>
+		<br>		
+		<a id="a" href="removeMail.html">Click Here to Unsubscribe!</a>
+	</center>
+</body>
+</html>

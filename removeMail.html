@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>We Miss You :(</title>
+	<script type="text/javascript">
+		function Validate(){
+			var mail = document.regform.uname; 
+			if(mail.value.length<=0)
+			{
+				alert("Enter an email!");
+				mail.focus();
+				return false;
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body id="body">
+	<h1>Unsubscribe :)</h1>
+		<form name="regform" method="post" action="unsubscribe.php" onsubmit="return Validate()">
+			<input type="email" name="uname" placeholder="someone@example.com" id="mail"><br>
+			<input type="submit" value="OPT-OUT">
+			<input type="reset" value="RESET">
+		</form>
+</body>
+</html>

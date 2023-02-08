@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Element Demo</title>
+        <style>
+            *{
+                padding: 2px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <br>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <br>
+            <label for="ph">Phone</label>
+            <input type="tel" id="ph">
+            <br>
+            <label for="lang">Language</label>
+            <select id="lang">
+                <option value="telugu">Telugu</option>
+                <option value="hindi">Hindi</option>
+                <option value="english">English</option>
+            </select>
+            <br>
+            <label for="gen">Gender</label>
+            <input type="radio" value="male" name="gen">
+            <label for="m">Male</label>
+            <input type="radio" value="female" name="gen">
+            <label for="f">Female</label>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
